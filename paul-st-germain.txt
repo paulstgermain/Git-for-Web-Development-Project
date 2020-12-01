@@ -1,3 +1,6 @@
+CodePen Link: https://codepen.io/PaulStG/pen/abmOrVO?editors=1000
+
+
 1. What is Semantic HTML? 
 
 Semantic HTML is when the HTML tags in a given document have semantic meaning regarding their usage - in other words, the tags themselves denote their purpose. (EX: section, nav, header, footer, ect)
