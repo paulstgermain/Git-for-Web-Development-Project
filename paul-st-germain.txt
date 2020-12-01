@@ -1,0 +1,183 @@
+1. What is Semantic HTML? 
+
+Semantic HTML is when the HTML tags in a given document have semantic meaning regarding their usage - in other words, the tags themselves denote their purpose. (EX: section, nav, header, footer, ect)
+
+    2. What is HTML used for? 
+
+HTML is a markup language used to write a document which browsers can then read and use as instructions to display the architecture of a web page.
+
+    3. What is an attribute and where do we put it? 
+
+An attribute is a kind of option for HTML tags like 'a' or 'img', and thus they are placed directly inside the tags themselves like so: '<a href="">' (href being the attribute.)
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+
+The <h1> tag is used to create a header or title, and for SEO purposes should only be used once, optimally used to describe the overall page it sits on.
+
+    5. Name two tags that have required attributes
+
+The <a> tag and the <img> tag.
+
+    6. What do we put in the head of our HTML document? 
+
+We place any meta tags like 'charset', the page title, and things like links to our CSS and JavaScript files in the head tag. (Although depending on the JavaScript document's functionality, this may be better saved for the bottom of the HTML document.)
+
+    7. What is an id? 
+
+An id is an HTML selector for use in CSS and JavaScript and it used to point out in a given CSS or JS document which element you are trying to select.
+
+    8. What elements can I add an id to? 
+
+You can add ids to any HTML element you need to select.
+
+    9. How many times can I use the same id on a page? 
+
+They should only be used once per page.
+
+    10. What is a class? 
+
+Classes are HTML selectors for use in CSS and JavaScript just like ids.
+
+    11. What elements can I add a class to? 
+
+Just like ids, you can add classes to any HTML element you need to select.
+
+    12. How many times can I use the same class on a page? 
+
+As many times as you like - unlike ids they are syntactically reusable on as many elements as you like.
+
+    13. How do I get my link to open in a new tab?
+
+By giving it a 'target' attribute with the '_blank' property like so: <a target="_blank">.
+
+    14. What is the alt attribute in the image tag used for? 
+
+The alt attribute is used for displaying text instead of the given image if the image becomes unavailable, and also for screen readers to be able to tell those with sight issues what is being displayed on the page.
+
+    15. How do I reference an id?
+
+You reference an id in CSS/JavaScript by placing a '#' before the id name.
+
+    16. What is the difference between a section and a div
+
+'section' denotes that section's content as being grouped together as a particular subject or as an actual section of the given page and has semantic meaning, whereas 'div' operates the same way, but has no semantic meaning.
+
+    17. What is CSS used for? 
+
+CSS is used for changing the appearance of the elements on an HTML page, such as colors, positioning, font styles and more.
+
+    18. How to we select an element? Example - every h2 on the page
+
+You would simply write the given element into a new line in your CSS document followed by a pair of curly braces, inside of which you place your styles. (EX: h2{color: blue;})
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+While they both function the same as selectors, ids should only be used once to be syntactically correct, while classes can be used as many times as is necessary. You would use an id where you have only one instance of a specific element you want to select, and you would use classes where you have multiple iterations of a type of element and want to select them all.
+
+    20. How do we select classes in CSS?
+
+We select classes by placing a '.' before the class name. (EX: .classname)
+
+    21. How do we select a p element with a single class of “human””?
+
+We would select it like so: (.human{}).
+
+    22. What is a parent child selector? When would this be useful? 
+
+A parent child selector is a selector which allows you to only select the specific instance of an element which sits inside another element, like a div or section. This would be useful if you have many divs on a page, each with, for example, an <h2> inside them, but only want to select one <h2> in one <div> specifically.
+
+    23. How do you select all links within a div with the class of sidebar?
+
+Like so: (.class a {})
+
+    24. What is a pseudo selector?
+
+Psuedo selectors are CSS selectors which have a ':' before them, and somewhat act as selector modifiers which allow you to select specific states of your elements, for instance allowing you to apply changes to an element only when it is hovered over or active.
+
+    25. What do we use the change the spacing between lines?
+
+The 'line-height' style.
+
+    26. What do we use to change the spacing between letters?
+
+The 'letter-spacing' style.
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+The 'text-transform' style.
+
+    28. How do I add a 1px border around my div that is dotted and black?
+
+Like so: (div {border: 1px dotted black}).
+
+    29. How do I select everything on the page? 
+
+You would use the CSS 'universal selector', or '*{}'.
+
+    30. How do I write a comment in CSS?
+
+Like so: (/*enter comment here*/).
+
+    31. How do I find out what file I am in, when I am using the command line? 
+
+You would type 'pwd', or 'Print Working Directory'.
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+
+You would type 'ls' or 'List'.
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+You would use the 'rm' or 'remove' command - but you need to be careful with this because it will not ask you if you're sure you want to delete the file in question and will delete it entirely - no trip to the recycling bin.
+
+    34. Why should I use version control? 
+
+You should use version control to keep track of changes being made to a code base / set of files / file and make reverting back to a previous version in case of catastrophic error much easier.
+
+    35. How often should I commit to github?
+
+You should commit often! Or more specifically, every time you finish implementing a change or otherwise need to save your progress so you don't lose it.
+
+    36. What is the command we would use to push our repo up to github? 
+
+We would use 'git push -u origin branchname'.
+
+    37. Walk me through Lambda's git flow. 
+
+1. Go to the remote repo for the day's project and fork yourself a copy by pressing the 'fork' button.
+2. On the page for your copy of the repo under your GitHub account, press the 'Code' button, copy the https link, then enter 'git clone repolinkhere' into your terminal.
+3. From here, work on your project as needed.
+4. When done, or when saving progress, move into the working directory where your newly cloned repo lives and enter 'git add .' to add all files with changes / new files to the staging area between working directory and local repository.
+5. Enter 'git commit -m "commit message here"' into your terminal to commit your changes to your local repository.
+6. When ready to submit your changes, 'push' your local repo up onto GitHub by entering 'git push -u origin branch-name-here' into your terminal.
+7. Back on the GitHub page for your remote copy of the forked project repo, start a pull request by clicking on the 'master' branch button and changing to your named branch, then clicking the 'Compare & Pull Request' button.
+8. On the next page, click the 'base repository' button and switch to your copy of the repo, then click 'Create pull request'.
+9. Once on the page for the pull request itself, copy it's link and submit it on the project page on Canvas.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+
+An inline element sits nicely on the same line as other elements, while block elements want to be on their own line and will thus move to their own line when placed or changed to display: block.
+
+    2. What happens when an element is positioned absolutely? 
+
+An element which is positioned absolutely is taken out of the flow of the HTML document, so every other element will reposition to fill up the space once taken by the absolutely positioned element since they no longer see that it's there.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+Set height to 'auto' before giving it a width - it's height will only size up to just contain the content within the element while matching the width you give it.
+
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+Display block: <div>, <h1-6>, <ul/ol>.
+Display inline: <a>, <img>.
+Display inline-block: <button>.
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+
+The box model in CSS is one which describes the way HTML elements sit on a page, each being their own box or rectangle with padding, borders and margin. It, along with display modes, determine how HTML elements sit on a page by default. It also determines how each elements sizes are displayed relative to the amount of padding, margin, ect added to each element.
+
+This can cause issues between different browsers however, because each browser may have different default padding, margins and way of calculating element size / width, as well as causing issues with your pages responsivity.
+
+The fixes for this are simple though: Add a universal selector as a CSS reset, with padding and margin set to 0, and add the 'box-sizing - border box;' style to your document. 'box-sizing: border-box' will include all padding and borders in an elements assigned size, so when you set an elements width that width isn't seen as a portion of an elements actual size besides the border and padding, but instead as the whole thing. 
